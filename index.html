@@ -12,7 +12,7 @@
        
     </head>
     <body>
-        <h1 style="background-color: aqua; outline-style: auto;">CLP Component Library</h1>
+        <h1 style="background-color: #E9E1F9; outline-style: outset; outline-color:#6b29c2; outline-width:7px;">CLP Component Library</h1>
         <p1>This is CLP's Component Library that we are making to learn Web Development.
         </p1>
         <hr>
@@ -24,14 +24,14 @@
          <h5>5th</h5> 
          <h6>Smallest Heading</h6> 
          <hr>
-    <h2>@container</h2>
-        <h3>Fluid container</h3>
+    <h2 style="background-color:#E9E1F9; outline-style:double; outline-width: 5px; font-family: 'Book Antiqua','Lucida Sans Unicode' ,'Tahoma','Arial';">@Container</h2>
+        <h3>Fluid container</h3> 
          <div class="container container-fluid">
-             This is a container which will go till the end of the page if there is enough tEXT AVAILABLE.
+             This is a container which will go till the end of the page if there is enough text Available.
          </div>
          <h3>Centered Fluid container</h3>
         <div class="container container-centre">
-             This is a container which will go till the Specified width of the page if there is enough tEXT AVAILABLE.
+             This is a container which will go till the Specified width of the page if there is enough text Available.
         </div>
 <hr>
 <h2>@link</h2>
@@ -55,42 +55,54 @@
     <nav class="navigation">
     Software community
     <ul class="list-non-bullet-">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blogs</a></li>
+        <li><a href="file:///D:/Sem%203/Extras/CLP/CLP/index.html">Home</a></li>
+        <li><a href="https://github.com/jasmit21/RJSS">Java Project On Bank Management System GitHub Link</a></li>
+        <li><a href="https://github.com/PurpleVen/Varanasi-Interactive-Dashboard">Geospatial Data Analysis Challenge GitHub Link</a></li>
+        <li><a href="https://replit.com/@simarkaur28/JavaScriptBasics#index.js">General Knowledge Quiz</a></li>
     </ul>
 </nav>
 </div>
 <hr>
 <h2 id="fluid-container">@header</h2>
 <header>
-<img src="res/developer image.svg" alt="">
-<h2>I am Simar Kaur, a web developer</h2>    
+    <h2>I am <span class="sec-heading">Simar Kaur</span>, a web developer</h2>
+<img src="res/developer image.svg"  height="200" width="700">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Image will be placed below the text due to z-index = -1. </p>
+<br>
+<br>
+
 </header>
 <hr>
 
+
 <h2 class="main-heading sec-heading">@section</h2>
-<section>
-    <div>
-        <h1>White Section</h1>
+<section class="section">
+    <div class="container container-centre">
+        <h1 class="main-heading">White Section</h1>
         <p>This section will have a white background. i dont know what else to write , so i will just write rubbish. please bear with me. I am a good person. Dont judge me on what i write. i might actually not write anything. Thank you for wasting your time reading this piece of not so helpful article :)</p>
     </div>
 </section>
-<section>
-    <div>
+<section class="section section-ow">
+    <div class="container container-centre">
         <h1>Off-White Section</h1>
         <p>This section will have a off-white background. i dont know what else to write , so i will just write rubbish. please bear with me. I am a good person. Dont judge me on what i write. i might actually not write anything. Thank you for wasting your time reading this piece of not so helpful article :)</p>
     </div>
 </section>
 <hr>
 <h2>@footer</h2>
-    <div>Our social media link</div>
-    </div>
-
-
-
-
-
-<div style=height:40vh></div>
+<footer class="footer">
+    <h2><div class="footer-heading">Our social media link</div></h2>
+<ul class="social list-non-bullet">
+    <li class="links list-item-inline"><a class="links" href="https://github.com/simarkaur28">GitHub Account</a></li>
+</ul>
+    
+</div>
+</footer>
     </body>
 </html>
