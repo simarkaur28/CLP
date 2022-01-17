@@ -8,8 +8,46 @@ body{
     font-family:'Zen Antique Soft', 
     serif;
 }
+.fixed-icons{
+    width: 4rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#float-icons{
+    background: transparent;
+    padding-left: 0;
+    padding-bottom: 0;
+   
 
-
+}
+.tab{
+    overflow:auto;
+    background-color: rgb(182, 88, 158);
+    transition: 2s;   
+}
+.tab button{
+    background-color: inherit;
+  float: left;
+  border:#F7EFDF;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  
+}
+.tab button:hover{
+    background-color: rgb(231, 154, 212);
+  
+}
+.tab button.active{
+    background-color:rgb(231, 154, 154) ;
+}
+.tabcontents{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;  
+}
 
 
 .container{
@@ -47,7 +85,7 @@ text-decoration: none;
     padding: 0.5rem 1.5rem;
 }
 #fluid-container{       /*id*/
-    background-color: rgb(59, 201, 15);
+    background-color: #E6E0EC;
 }
 .hero{
     /*padding: 1rem;*/

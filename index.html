@@ -8,21 +8,63 @@
         <Title class="main-heading">
             CLP Component Library Simar Kaur
         </Title>
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="" href=""
        
     </head>
     <body>
+        <div class='fixed-icons' >
+
+            <ul id="float-icons">
+
+            <li><img src="res/icon1.png" height="50" width="50"></li>
+            </ul>
+            
+            </div>
+        <div class="tab">
+            <button class="tablinks" onclick="ClickHandle(event,'Home')">Home</button>
+            <button class="tablinks" onclick="ClickHandle(event, 'Quiz')">Quiz</button>
+            <button class="tablinks" onclick="ClickHandle(event, 'GitHub')">GitHub</button>
+        </div>
+        <div id="Home" class="tabcontents">
+            <h4>This is Home</h4>
+            <a href="http://127.0.0.1:5500/index.html"></a>
+        </div>
+       
+        <div id="Quiz" class="tabcontents"><h3>Test your Knowledge</h3>
+            <a href="https://replit.com/@simarkaur28/JavaScriptBasics#index.js">Click Here</a>
+        </div> 
+        <div id="GitHub" class="tabcontents">
+           <h4>I have been on GitHub since 30 August, 2021.<br>Know my progress</h4>
+            <a href="https://github.com/simarkaur28">Click Here</a>
+        </div>  
+    
+       <script>
+            function ClickHandle(evt, Name) {
+              var tabcontents = document.getElementsByClassName("tabcontents");
+              for (var i = 0; i < tabcontents.length; i++) {
+             tabcontents[i].style.display = "none";
+              }
+              var tablinks = document.getElementsByClassName("tablinks");
+              for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(Name).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script> 
+
         <h1 style="background-color: #E9E1F9; outline-style: outset; outline-color:#6b29c2; outline-width:7px;">CLP Component Library</h1>
-        <p1>This is CLP's Component Library that we are making to learn Web Development.
+        <p1>This is <abbr title="Community learning program">CLP</abbr>'s Component Library that we are making to learn Web Development.
         </p1>
         <hr>
          <h2>@Typography</h2>   
-         <h1>Biggest</h1> 
-         <h2>2nd</h2> 
-         <h3>3rd</h3> 
-         <h4>4th</h4> 
-         <h5>5th</h5> 
-         <h6>Smallest Heading</h6> 
+         <h1>About Me</h1> 
+         <h2>I am an IT engineer Student at </h2>
+         <address><h3>Don Bosco Institute of Technolog, Kurla.</h3></address> 
+         <h4>Currently learning:</h4> 
+         <h5>Geospatial Analysis</h5> 
+         <h6>Languages I know: C++, Java, R, Python</h6> 
          <hr>
     <h2 style="background-color:#E9E1F9; outline-style:double; outline-width: 5px; font-family: 'Book Antiqua','Lucida Sans Unicode' ,'Tahoma','Arial';">@Container</h2>
         <h3>Fluid container</h3> 
@@ -53,7 +95,8 @@
 <hr>
 <div class="nav-brand"><h2>@nav</h2>
     <nav class="navigation">
-    Software community
+    Software community &#128512
+   
     <ul class="list-non-bullet-">
         <li><a href="file:///D:/Sem%203/Extras/CLP/CLP/index.html">Home</a></li>
         <li><a href="https://github.com/jasmit21/RJSS">Java Project On Bank Management System GitHub Link</a></li>
@@ -84,13 +127,13 @@
 <h2 class="main-heading sec-heading">@section</h2>
 <section class="section">
     <div class="container container-centre">
-        <h1 class="main-heading">White Section</h1>
+        <h1 class="main-heading"><cite>White Section</cite></h1>
         <p>This section will have a white background. i dont know what else to write , so i will just write rubbish. please bear with me. I am a good person. Dont judge me on what i write. i might actually not write anything. Thank you for wasting your time reading this piece of not so helpful article :)</p>
     </div>
 </section>
 <section class="section section-ow">
     <div class="container container-centre">
-        <h1>Off-White Section</h1>
+        <h1><cite>Off-White Section</cite> </h1>
         <p>This section will have a off-white background. i dont know what else to write , so i will just write rubbish. please bear with me. I am a good person. Dont judge me on what i write. i might actually not write anything. Thank you for wasting your time reading this piece of not so helpful article :)</p>
     </div>
 </section>
