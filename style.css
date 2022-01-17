@@ -1,32 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 /*CSS variables*/
 :root{
-    --primary-color:#00000;
-    white:#fffff
+    background: #F7EFDF;
 }
+
 body{
     font-family:'Zen Antique Soft', 
     serif;
-   
 }
 
-.main-heading{
-    color: blue;
-}
 
-.sec-heading{
-    font-style: italic;
-}
-#fluid-container{       /*id*/
-    background-color: blueviolet;
-}
+
 
 .container{
-    padding: 2rem 1rem 3rem;
+    padding:2rem 6rem;
 }
 
 .container-centre{
-max-width: 700px;
+max-width: 600px;
 margin: auto;
 }
 
@@ -55,3 +46,75 @@ text-decoration: none;
     display: inline;
     padding: 0.5rem 1.5rem;
 }
+#fluid-container{       /*id*/
+    background-color: rgb(59, 201, 15);
+}
+.hero{
+    /*padding: 1rem;*/
+    position: relative;
+}
+.hero-img{
+    max-width: 50%;
+    max-height: 100px;
+    display: block;
+    
+}
+img{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.hero-heading{
+    text-align: center;
+    padding-top: 1rem;
+}
+.hero-colored{
+    color: blue;
+}
+
+/*section*/
+.section{
+    background-color: #ffffff;
+}
+.section h1{
+    text-align: center;
+}
+.section p{
+    text-align: justify;
+}
+.section-ow{
+    padding:1 rem;
+background-color:#f8f8ff;
+}
+.main-heading{
+    color:blue;
+}
+
+.sec-heading{
+    font-style:italic;
+    color: rgb(182, 88, 158);
+}
+
+/*footer*/
+.footer{
+background-color:blueviolet;
+padding: 2rem 3rem;
+border-radius: 1rem;
+}
+.footer-heading{
+    text-align: center;
+color: #E6E0EC;
+font-weight:bolder;
+}
+.footer .links{
+    color: rgb(247, 246, 252);
+    text-align: center;
+    text-decoration: none;
+}
+.footer .social{
+    text-align: center;
+}
+.social :hover {
+    color: rgb(241, 245, 4);
+} 
